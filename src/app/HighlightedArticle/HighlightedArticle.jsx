@@ -1,6 +1,7 @@
 import styles from "./highlighted-article.module.scss";
 import BtnClickMe from "../Buttons/BtnClickMe";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HighlightedArticle() {
   const imgUrl =
@@ -13,9 +14,10 @@ export default function HighlightedArticle() {
           At oddball, this is a very long title which extends to the second line
         </h2>
         <p>
-          We’ve created a very long description that extends to 2 lines. So long
-          that I need to type more text than I thought.
+          We’ve created a very long description that extends to 2 lines.
+          <br /> So long that I need to type more text than I thought.
         </p>
+
         <BtnClickMe text="Click me!" />
       </div>
       <div className={styles.article__img}>

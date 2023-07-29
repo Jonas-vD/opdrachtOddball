@@ -47,9 +47,10 @@ $break-xlg: 1280px;
     padding: 6.4rem;
     display: flex;
     flex-direction: column;
-    @media (max-width: $break-md) {
+    @media (max-width: $break-lg) {
       padding: 4rem;
     }
+
     @media (max-width: $break-s) {
       padding: 2.5rem;
     }
@@ -85,8 +86,14 @@ $break-xlg: 1280px;
       font-size: 2rem;
       font-weight: 400;
       line-height: 3.8rem;
+
       @media (max-width: $break-lg) {
         font-size: 1.8rem;
+      }
+      br {
+        @media (max-width: 1220px) {
+          display: none;
+        }
       }
     }
   }
