@@ -36,6 +36,7 @@ $break-xlg: 1280px;
   gap: unset;
   background-color: #f2e1d9;
   padding: unset;
+
   @media (max-width: $break-md) {
     grid-template-columns: none;
     grid-template-areas: "image" "content";
@@ -46,19 +47,35 @@ $break-xlg: 1280px;
     padding: 6.4rem;
     display: flex;
     flex-direction: column;
+    @media (max-width: $break-md) {
+      padding: 4rem;
+    }
     @media (max-width: $break-s) {
       padding: 2.5rem;
     }
+
     &__stitle {
       font-size: 1.5rem !important;
       font-weight: 600;
       line-height: 2.8rem;
-      margin-bottom: 2rem;
+      margin-bottom: 2.8rem;
+      @media (max-width: $break-s) {
+        margin-bottom: 2.4rem;
+      }
     }
     h2 {
+      transition: all 300ms;
       font-size: 4.4rem;
       font-weight: 600;
       margin-bottom: 3.5rem;
+      @media (max-width: $break-xlg) {
+        font-size: 4rem;
+        line-height: 4.8rem;
+      }
+      @media (max-width: $break-lg) {
+        font-size: 3.8rem;
+        line-height: 4.2rem;
+      }
       @media (max-width: $break-s) {
         font-size: 3.2rem;
         line-height: 3.8rem;
@@ -68,13 +85,16 @@ $break-xlg: 1280px;
       font-size: 2rem;
       font-weight: 400;
       line-height: 3.8rem;
+      @media (max-width: $break-lg) {
+        font-size: 1.8rem;
+      }
     }
   }
   &__img {
     position: relative;
     grid-area: image;
     @media (max-width: $break-md) {
-      min-height: 300px;
+      min-height: 350px;
     }
   }
 }
