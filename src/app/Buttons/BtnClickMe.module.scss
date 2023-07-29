@@ -1,0 +1,22 @@
+$break-s: 480px;
+$break-md: 768px;
+$break-lg: 1024px;
+$break-xlg: 1280px;
+
+.btn {
+  width: fit-content;
+  padding: 1.2rem 10.5rem 1.2rem 2rem;
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.8rem;
+  outline: unset;
+  border: unset;
+  margin-top: 11.7rem;
+  cursor: pointer;
+  @media (max-width: $break-s) {
+    margin-top: 4.8rem;
+  }
+}
