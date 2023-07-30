@@ -18,7 +18,7 @@ export default function HighlightedArticle() {
           <br /> So long that I need to type more text than I thought.
         </p>
 
-        <BtnClickMe text="Click me!" />
+        <BtnClickMe text="Click&nbsp;me!" />
       </div>
       <div className={styles.article__img}>
         <Image
